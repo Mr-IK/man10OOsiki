@@ -5,4 +5,4 @@ commands:
   ms:
     description: man10OOsiki
     usage: /<command>
-    default: true
+    default: op

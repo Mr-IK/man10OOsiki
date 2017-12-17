@@ -89,6 +89,10 @@ public class Man10OOsiki extends JavaPlugin {
 				
 			 break;
 		 case 2:
+	         if(!p.hasPermission("man10.gacha.setenablewin")){
+	                p.sendMessage(prefix + "あなたに○○式をclearする権限はありません!");
+	                return true;
+	            }
 			 if(args[0].equalsIgnoreCase("clear")) {
 				 if(config1.getString("siki"+args[1].toString()) == null) {
 					 sender.sendMessage(prefix+"§4"+"その○○式はありません！");
