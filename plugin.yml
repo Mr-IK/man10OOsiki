@@ -1,0 +1,8 @@
+name: Man10OOsiki
+version: 1.0.0
+main: man10siki.Man10OOsiki
+commands:
+  ms:
+    description: man10OOsiki
+    usage: /<command>
+    default: true
