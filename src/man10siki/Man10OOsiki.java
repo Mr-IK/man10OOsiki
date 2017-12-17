@@ -88,6 +88,16 @@ public class Man10OOsiki extends JavaPlugin {
 				}
 				
 			 break;
+		 case 2:
+			 if(args[0].equalsIgnoreCase("clear")) {
+				 if(config1.getString("siki"+args[1].toString()) == null) {
+					 sender.sendMessage(prefix+"§4"+"その○○式はありません！");
+					 return true;
+				 } 
+				 config1.set(config1.getString("siki"+args[1].toString()), null);
+				 sender.sendMessage(prefix+"§4"+args[1].toString()+"を削除しました。");
+			 }
+			 break;
 		 case 3:
 		  try {
 			  Integer.parseInt(args[0]);
