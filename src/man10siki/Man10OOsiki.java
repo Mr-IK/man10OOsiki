@@ -89,7 +89,7 @@ public class Man10OOsiki extends JavaPlugin {
 				
 			 break;
 		 case 2:
-	         if(!p.hasPermission("man10.gacha.setenablewin")){
+	         if(!p.hasPermission("man10.siki.delete")){
 	                p.sendMessage(prefix + "あなたに○○式をclearする権限はありません！");
 	                return true;
 	            }
