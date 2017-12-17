@@ -90,7 +90,7 @@ public class Man10OOsiki extends JavaPlugin {
 			 break;
 		 case 2:
 	         if(!p.hasPermission("man10.gacha.setenablewin")){
-	                p.sendMessage(prefix + "あなたに○○式をclearする権限はありません!");
+	                p.sendMessage(prefix + "あなたに○○式をclearする権限はありません！");
 	                return true;
 	            }
 			 if(args[0].equalsIgnoreCase("clear")) {
@@ -155,6 +155,7 @@ public class Man10OOsiki extends JavaPlugin {
 			    }
 		  default:
 			  sender.sendMessage(prefix+"/ms やりたい式の数字 掛け金 一言");
+			  sender.sendMessage(prefix+"参加=> /ms 参加したい○○式の名前");
 			  break;
 		}
 		return true;
