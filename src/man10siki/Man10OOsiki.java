@@ -154,7 +154,7 @@ public class Man10OOsiki extends JavaPlugin {
 					  return true;
 			    }
 		  default:
-			  sender.sendMessage(prefix+"/ms やりたい式の数字 掛け金 一言");
+			  sender.sendMessage(prefix+"/ms やりたい式の数字 掛け金 ○○式につける名前");
 			  sender.sendMessage(prefix+"参加=> /ms 参加したい○○式の名前");
 			  break;
 		}
