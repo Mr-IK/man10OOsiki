@@ -98,7 +98,7 @@ public class Man10OOsiki extends JavaPlugin {
 					 sender.sendMessage(prefix+"§4"+"その○○式はありません！");
 					 return true;
 				 } 
-				 config1.set(config1.getString("siki"+args[1].toString()), null);
+				 config1.set(config1.getString("siki."+args[1].toString()), null);
 				 sender.sendMessage(prefix+"§4"+args[1].toString()+"を削除しました。");
 			 }
 			 break;
