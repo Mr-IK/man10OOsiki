@@ -94,7 +94,7 @@ public class Man10OOsiki extends JavaPlugin {
 	                return true;
 	            }
 			 if(args[0].equalsIgnoreCase("clear")) {
-				 if(config1.getString("siki"+args[1].toString()) == null) {
+				 if(config1.getString("siki."+args[1].toString()) == null) {
 					 sender.sendMessage(prefix+"§4"+"その○○式はありません！");
 					 return true;
 				 } 
@@ -109,11 +109,11 @@ public class Man10OOsiki extends JavaPlugin {
 			        Integer.parseInt(args[1]);
 			        double i1 = Double.parseDouble(args[1]);
 			        double i2 = Double.parseDouble(args[0]);
-			        if(1 <= i2) {
+			        if(i2 <= 1) {
 						 sender.sendMessage(prefix+"§4"+"式の数は2以上にしてください！");
 						 return true;
 					 } 
-			        if(9999 <= i1) {
+			        if(i1 <= 9999) {
 						 sender.sendMessage(prefix+"§4"+"かける金額は$10000以上にしてください！");
 						 return true;
 					 } 
