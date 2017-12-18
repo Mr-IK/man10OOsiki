@@ -109,10 +109,12 @@ public class Man10OOsiki extends JavaPlugin {
 			        Integer.parseInt(args[1]);
 			        double i1 = Double.parseDouble(args[1]);
 			        double i2 = Double.parseDouble(args[0]);
+			        if(config1.getString("siki") != null) {
 			        for (String key : config1.getConfigurationSection("siki").getKeys(false)) {
 			            if(config1.getString("siki." + key + ".player") == sender.getName().toString()){
 							 sender.sendMessage(prefix+"§4"+"すでに○○式を登録しています！");
 							 return true;
+			            }
 			            }
 			        }
 			        if(i2 <= 1) {
